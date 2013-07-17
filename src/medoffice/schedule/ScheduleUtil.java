@@ -166,7 +166,7 @@ public class ScheduleUtil {
    }
    
    public static void defineAvailableDatePeriods(List<AppointmentTime> appointmentTimeList, List<TimePeriodManager> timePeriodManagerList, List<ProviderSchedule> providerScheduleList,
-           List<OfficeSchedule> officeScheduleList, Date startDate, Date endDate, int categoryId) {
+           List<OfficeSchedule> officeScheduleList, Date startDate, Date endDate) {
       List<TimeSlot> busySlotList;
       DatePeriodManager datePeriodManager = new DatePeriodManager(startDate, endDate);
       for (ProviderSchedule providerSchedule : providerScheduleList) {
